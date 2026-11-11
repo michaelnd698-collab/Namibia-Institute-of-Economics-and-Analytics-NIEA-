@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Namibia Institute of Economics and Analytics (NIEA) provides practical training, economic research, data analytics and professional services.">
+    <meta name="description" content="Namibia Institute of Economics and Analytics (NIEA) provides professional training, economic research, data analytics and consultancy services.">
 
-    <meta name="theme-color" content="#10243a">
+    <meta name="theme-color" content="#46324F">
 
     <title>NIEA | Namibia Institute of Economics and Analytics</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -23,78 +24,103 @@
 <body>
 
 <!-- HEADER -->
+
 <header class="site-header">
+
     <div class="container nav-wrap">
 
-        <a class="brand" href="#home">
-            <span class="brand-mark">N</span>
+        <a href="#home" class="brand">
+
+            <div class="logo-frame">
+                <img src="niea-logo.png" alt="NIEA Logo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+                <span class="logo-fallback">N</span>
+            </div>
 
             <span class="brand-copy">
                 <strong>NIEA</strong>
                 <small>Namibia Institute of<br>Economics & Analytics</small>
             </span>
+
         </a>
 
-        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+
+        <button class="menu-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
             ☰
         </button>
 
+
         <nav class="primary-nav">
+
             <a href="#about">About</a>
             <a href="#academy">Academy</a>
             <a href="#services">Services</a>
             <a href="#experience">Experience</a>
             <a href="#insights">Insights</a>
-            <a href="#contact" class="nav-contact">Get in touch ↗</a>
+
+            <a href="#contact" class="nav-contact">
+                Get in touch ↗
+            </a>
+
         </nav>
 
     </div>
+
 </header>
 
 
 <main>
 
 <!-- HERO SECTION -->
+
 <section class="hero" id="home">
 
-    <div class="container hero-content">
+    <div class="container hero-grid">
 
         <div class="hero-copy">
 
-            <p class="eyebrow light">
+            <div class="hero-label">
+                <span class="label-dot"></span>
                 ECONOMICS · ANALYTICS · INNOVATION
-            </p>
+            </div>
 
             <h1>
-                Turning knowledge<br>
-                into <em>practical skills.</em>
+                Knowledge that<br>
+                creates <span>opportunity.</span>
             </h1>
 
             <p class="hero-lead">
-                Build the skills to understand economies, work with data
-                and solve real-world challenges. Learn, practise and grow
+                Develop practical skills, explore economic ideas
+                and transform information into meaningful insights.
+                Discover a new approach to learning and professional growth
                 with NIEA.
             </p>
 
             <div class="hero-actions">
 
-                <a href="#academy" class="button button-gold">
-                    Explore programmes →
+                <a href="#academy" class="button button-primary">
+                    Explore our programmes →
                 </a>
 
-                <a href="#about" class="text-link light-link">
+                <a href="#about" class="text-link">
                     Discover NIEA ↗
                 </a>
 
             </div>
 
-            <div class="hero-proof">
-                <div class="proof-icon">N</div>
 
-                <p>
-                    <strong>Learn with purpose.</strong><br>
-                    <span>Apply your knowledge in the real world.</span>
-                </p>
+            <div class="hero-proof">
+
+                <div class="proof-icon">✓</div>
+
+                <div>
+                    <strong>Learning beyond theory</strong>
+                    <small>Practical knowledge. Real-world application.</small>
+                </div>
+
             </div>
 
         </div>
@@ -102,117 +128,209 @@
 
         <div class="hero-visual">
 
-            <div class="visual-orbit orbit-one"></div>
-            <div class="visual-orbit orbit-two"></div>
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
 
-            <div class="main-chart">
+            <div class="hero-card">
 
-                <div class="chart-top">
-                    <span>ECONOMIC INSIGHT</span>
-                    <span>●</span>
+                <div class="hero-card-top">
+                    <span>THE NIEA APPROACH</span>
+                    <span class="live-dot"></span>
                 </div>
 
-                <div class="chart-title">
-                    Data into decisions
+                <div class="hero-card-title">
+                    Turning ideas into impact.
                 </div>
 
-                <div class="chart-bars">
-                    <i style="--h:34%"></i>
-                    <i style="--h:48%"></i>
-                    <i style="--h:42%"></i>
-                    <i style="--h:67%"></i>
-                    <i style="--h:58%"></i>
-                    <i style="--h:78%"></i>
-                    <i style="--h:92%"></i>
+                <div class="visual-chart">
+
+                    <div class="chart-column" style="--height:35%">
+                        <span></span>
+                    </div>
+
+                    <div class="chart-column" style="--height:52%">
+                        <span></span>
+                    </div>
+
+                    <div class="chart-column" style="--height:44%">
+                        <span></span>
+                    </div>
+
+                    <div class="chart-column" style="--height:70%">
+                        <span></span>
+                    </div>
+
+                    <div class="chart-column" style="--height:62%">
+                        <span></span>
+                    </div>
+
+                    <div class="chart-column" style="--height:88%">
+                        <span></span>
+                    </div>
+
                 </div>
 
-                <div class="chart-bottom">
+                <div class="chart-caption">
+                    <span>LEARN</span>
                     <span>ANALYSE</span>
-                    <span>INTERPRET</span>
                     <span>APPLY</span>
                 </div>
 
             </div>
 
-            <div class="floating-tag tag-data">
-                <span>↗</span>
+
+            <div class="floating-card floating-top">
+
+                <span class="floating-icon">📊</span>
+
                 <div>
-                    <b>Data analytics</b>
-                    <small>Make evidence useful</small>
+                    <strong>Data analytics</strong>
+                    <small>Evidence into insight</small>
                 </div>
+
             </div>
 
-            <div class="floating-tag tag-research">
-                <span>⌕</span>
+
+            <div class="floating-card floating-bottom">
+
+                <span class="floating-icon">🎓</span>
+
                 <div>
-                    <b>Applied research</b>
-                    <small>Ask better questions</small>
+                    <strong>Practical learning</strong>
+                    <small>Skills for tomorrow</small>
                 </div>
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="hero-bottom container">
-        <span>Independent. Practical. Forward-looking.</span>
+
+    <div class="container hero-bottom">
+
+        <span>Independent · Practical · Forward-looking</span>
+
         <span>SCROLL TO EXPLORE ↓</span>
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section class="intro section-pad" id="about">
-
-    <div class="container intro-grid">
-
-        <div>
-            <p class="eyebrow">WELCOME TO NIEA</p>
-
-            <h2>
-                Where learning meets<br>
-                <em>real-world application.</em>
-            </h2>
-        </div>
-
-        <div class="intro-text">
-
-            <p class="large-copy">
-                The Namibia Institute of Economics and Analytics (NIEA)
-                is an independent professional education, research and
-                analytical services organisation.
-            </p>
-
-            <p>
-                We bridge the gap between theory and practice through
-                specialised training, hands-on projects and services
-                that help people and organisations make better use of
-                economic knowledge and data.
-            </p>
-
-            <a href="#contact" class="text-link dark-link">
-                Connect with our team ↗
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="container values-strip">
-
-        <div><b>01</b><span>Practical<br>learning</span></div>
-        <div><b>02</b><span>Analytical<br>thinking</span></div>
-        <div><b>03</b><span>Professional<br>growth</span></div>
-        <div><b>04</b><span>Applied<br>innovation</span></div>
 
     </div>
 
 </section>
 
 
-<!-- ACADEMY -->
+<!-- ABOUT SECTION -->
+
+<section class="about section-pad" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-heading">
+
+                <p class="eyebrow">GET TO KNOW US</p>
+
+                <h2>
+                    Learning with purpose.<br>
+                    <span>Growing through knowledge.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-description">
+
+                <p class="large-copy">
+                    The Namibia Institute of Economics and Analytics (NIEA)
+                    is an independent professional education, research
+                    and analytical services organisation.
+                </p>
+
+                <p>
+                    We aim to bridge the gap between academic knowledge
+                    and practical application through specialised training,
+                    research, data analytics and professional services.
+                </p>
+
+                <a href="#contact" class="text-link dark-link">
+                    Connect with our team →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value-card">
+
+                <span class="value-number">01</span>
+                <span class="value-icon">📚</span>
+
+                <h3>Practical learning</h3>
+
+                <p>
+                    Transform knowledge into useful skills
+                    through applied learning.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <span class="value-number">02</span>
+                <span class="value-icon">📈</span>
+
+                <h3>Analytical thinking</h3>
+
+                <p>
+                    Develop the ability to interpret information
+                    and solve problems.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <span class="value-number">03</span>
+                <span class="value-icon">🌱</span>
+
+                <h3>Professional growth</h3>
+
+                <p>
+                    Support continuous learning and professional
+                    development.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <span class="value-number">04</span>
+                <span class="value-icon">💡</span>
+
+                <h3>Applied innovation</h3>
+
+                <p>
+                    Encourage creative thinking and practical
+                    approaches to emerging challenges.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ACADEMY SECTION -->
+
 <section class="academy section-pad" id="academy">
 
     <div class="container">
@@ -220,23 +338,26 @@
         <div class="section-heading">
 
             <div>
+
                 <p class="eyebrow">NIEA ACADEMY</p>
 
                 <h2>
-                    Build skills that<br>
-                    <em>move you forward.</em>
+                    Explore our learning<br>
+                    <span>programmes.</span>
                 </h2>
+
             </div>
 
-            <div class="heading-aside">
+            <div class="heading-description">
 
                 <p>
-                    Practical courses designed to help you move from
-                    understanding concepts to applying them with confidence.
+                    Discover practical learning opportunities
+                    designed to develop your technical knowledge,
+                    analytical abilities and professional skills.
                 </p>
 
                 <a href="#contact" class="text-link dark-link">
-                    Enquire about training ↗
+                    Enquire about training →
                 </a>
 
             </div>
@@ -246,29 +367,32 @@
 
         <div class="course-grid">
 
-            <article class="course-card">
-                <div class="course-icon">⌁</div>
 
-                <p class="card-kicker">ECONOMICS & POLICY</p>
+            <article class="course-card">
+
+                <div class="course-icon icon-orange">📉</div>
+
+                <span class="card-category">ECONOMICS & POLICY</span>
 
                 <h3>Applied Economics</h3>
 
                 <p>
-                    Explore economic issues, interpret indicators and
-                    understand how policy decisions shape economies.
+                    Explore economic issues, interpret indicators
+                    and understand how policy decisions shape economies.
                 </p>
 
-                <a href="#contact" class="card-link"
-                   data-course="Applied Economics">
+                <a href="#contact" data-course="Applied Economics">
                     Enquire about this course →
                 </a>
+
             </article>
 
 
-            <article class="course-card featured-course">
-                <div class="course-icon">▥</div>
+            <article class="course-card">
 
-                <p class="card-kicker">DATA & VISUALISATION</p>
+                <div class="course-icon icon-green">📊</div>
+
+                <span class="card-category">DATA & VISUALISATION</span>
 
                 <h3>Data Analytics</h3>
 
@@ -277,17 +401,18 @@
                     data cleaning, dashboards and data storytelling.
                 </p>
 
-                <a href="#contact" class="card-link"
-                   data-course="Data Analytics and Visualisation">
+                <a href="#contact" data-course="Data Analytics and Visualisation">
                     Enquire about this course →
                 </a>
+
             </article>
 
 
             <article class="course-card">
-                <div class="course-icon">⌕</div>
 
-                <p class="card-kicker">RESEARCH & METHODS</p>
+                <div class="course-icon icon-purple">🔍</div>
+
+                <span class="card-category">RESEARCH & METHODS</span>
 
                 <h3>Practical Research</h3>
 
@@ -296,36 +421,38 @@
                     analysis and professional report writing.
                 </p>
 
-                <a href="#contact" class="card-link"
-                   data-course="Practical Economic Research">
+                <a href="#contact" data-course="Practical Economic Research">
                     Enquire about this course →
                 </a>
+
             </article>
 
 
             <article class="course-card">
-                <div class="course-icon">∑</div>
 
-                <p class="card-kicker">ECONOMETRICS</p>
+                <div class="course-icon icon-blue">∑</div>
+
+                <span class="card-category">QUANTITATIVE ANALYSIS</span>
 
                 <h3>Applied Econometrics</h3>
 
                 <p>
-                    Work with regression, statistical software and
-                    the interpretation of quantitative results.
+                    Work with regression, statistical software
+                    and the interpretation of quantitative results.
                 </p>
 
-                <a href="#contact" class="card-link"
-                   data-course="Applied Econometrics">
+                <a href="#contact" data-course="Applied Econometrics">
                     Enquire about this course →
                 </a>
+
             </article>
 
 
             <article class="course-card">
-                <div class="course-icon">◈</div>
 
-                <p class="card-kicker">FINANCE & MARKETS</p>
+                <div class="course-icon icon-pink">💹</div>
+
+                <span class="card-category">FINANCE & MARKETS</span>
 
                 <h3>Financial Analysis</h3>
 
@@ -334,17 +461,18 @@
                     investment fundamentals and financial data.
                 </p>
 
-                <a href="#contact" class="card-link"
-                   data-course="Financial and Investment Analysis">
+                <a href="#contact" data-course="Financial and Investment Analysis">
                     Enquire about this course →
                 </a>
+
             </article>
 
 
             <article class="course-card">
-                <div class="course-icon">⌘</div>
 
-                <p class="card-kicker">DIGITAL ECONOMY</p>
+                <div class="course-icon icon-yellow">🤖</div>
+
+                <span class="card-category">DIGITAL ECONOMY</span>
 
                 <h3>AI & Digital Economics</h3>
 
@@ -353,25 +481,34 @@
                     and technology-driven economic change.
                 </p>
 
-                <a href="#contact" class="card-link"
-                   data-course="AI and Digital Economics">
+                <a href="#contact" data-course="AI and Digital Economics">
                     Enquire about this course →
                 </a>
+
             </article>
+
 
         </div>
 
-        <p class="section-note">
-            Course availability, dates, delivery format and fees are
-            confirmed when each programme is scheduled.
-        </p>
+
+        <div class="course-note">
+
+            <span>ℹ</span>
+
+            <p>
+                Course availability, dates, delivery format and fees
+                are confirmed when each programme is scheduled.
+            </p>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- SERVICES -->
+<!-- SERVICES SECTION -->
+
 <section class="services section-pad" id="services">
 
     <div class="container">
@@ -379,59 +516,117 @@
         <div class="section-heading">
 
             <div>
-                <p class="eyebrow light">WHAT WE DO</p>
+
+                <p class="eyebrow light">OUR PROFESSIONAL SERVICES</p>
 
                 <h2>
-                    Insight for people.<br>
-                    <em>Solutions for organisations.</em>
+                    Knowledge that<br>
+                    <span>solves real problems.</span>
                 </h2>
+
             </div>
 
-            <p class="services-intro">
-                Alongside our learning programmes, NIEA provides research
-                and analytical services to businesses, institutions
-                and organisations.
+            <p class="services-description">
+                We provide research and analytical services to
+                businesses, institutions and organisations seeking
+                evidence-based insights and practical solutions.
             </p>
 
         </div>
 
 
-        <div class="service-list">
+        <div class="services-grid">
 
-            <a href="#contact" class="service-row">
+
+            <a href="#contact" class="service-card">
+
+                <span class="service-icon">📚</span>
+
                 <span class="service-number">01</span>
-                <span class="service-name">Research & economic consultancy</span>
-                <span class="service-desc">Evidence, studies and economic analysis</span>
+
+                <h3>Research & Economic Consultancy</h3>
+
+                <p>
+                    Economic studies, research projects,
+                    policy analysis and consultancy.
+                </p>
+
                 <span class="service-arrow">↗</span>
+
             </a>
 
-            <a href="#contact" class="service-row">
+
+            <a href="#contact" class="service-card">
+
+                <span class="service-icon">📊</span>
+
                 <span class="service-number">02</span>
-                <span class="service-name">Data analytics & visualisation</span>
-                <span class="service-desc">From raw data to clear insights</span>
+
+                <h3>Data Analytics & Visualisation</h3>
+
+                <p>
+                    Transform raw information into meaningful
+                    analysis and visual insights.
+                </p>
+
                 <span class="service-arrow">↗</span>
+
             </a>
 
-            <a href="#contact" class="service-row">
+
+            <a href="#contact" class="service-card">
+
+                <span class="service-icon">🏢</span>
+
                 <span class="service-number">03</span>
-                <span class="service-name">Market & business research</span>
-                <span class="service-desc">Understand markets and opportunities</span>
+
+                <h3>Market & Business Research</h3>
+
+                <p>
+                    Market assessments, business research
+                    and opportunity analysis.
+                </p>
+
                 <span class="service-arrow">↗</span>
+
             </a>
 
-            <a href="#contact" class="service-row">
+
+            <a href="#contact" class="service-card">
+
+                <span class="service-icon">🎯</span>
+
                 <span class="service-number">04</span>
-                <span class="service-name">Feasibility & impact studies</span>
-                <span class="service-desc">Assess ideas, projects and outcomes</span>
+
+                <h3>Feasibility & Impact Studies</h3>
+
+                <p>
+                    Assess project viability, performance,
+                    potential impact and outcomes.
+                </p>
+
                 <span class="service-arrow">↗</span>
+
             </a>
 
-            <a href="#contact" class="service-row">
+
+            <a href="#contact" class="service-card">
+
+                <span class="service-icon">👥</span>
+
                 <span class="service-number">05</span>
-                <span class="service-name">Corporate training</span>
-                <span class="service-desc">Practical skills for teams and institutions</span>
+
+                <h3>Corporate Training</h3>
+
+                <p>
+                    Tailored professional development and
+                    practical skills training for organisations.
+                </p>
+
                 <span class="service-arrow">↗</span>
+
             </a>
+
 
         </div>
 
@@ -440,33 +635,35 @@
 </section>
 
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE SECTION -->
+
 <section class="experience section-pad" id="experience">
 
     <div class="container experience-grid">
 
-        <div class="experience-art">
 
-            <div class="art-frame">
+        <div class="experience-visual">
 
-                <p class="art-label">THE NIEA APPROACH</p>
+            <div class="experience-panel">
 
-                <div class="art-big">
+                <span class="panel-label">THE NIEA APPROACH</span>
+
+                <h2>
                     Learn.<br>
-                    <em>Practise.</em><br>
+                    <span>Practise.</span><br>
                     Present.
-                </div>
+                </h2>
 
-                <div class="art-line"></div>
+                <div class="panel-divider"></div>
 
                 <p>
-                    Knowledge becomes valuable when you can put it
-                    into practice.
+                    Knowledge becomes valuable when you can
+                    put it into practice.
                 </p>
 
-                <div class="art-stamp">
-                    NIEA<br>
-                    <span>APPLIED LEARNING</span>
+                <div class="panel-badge">
+                    NIEA
+                    <small>APPLIED LEARNING</small>
                 </div>
 
             </div>
@@ -480,24 +677,28 @@
 
             <h2>
                 Experience is part<br>
-                of the <em>learning.</em>
+                of the <span>learning.</span>
             </h2>
 
             <p>
-                Our practical experience programmes are designed around
-                projects, guided application and feedback. Participants
-                can work with real or carefully prepared datasets,
-                develop outputs and present what they have learned.
+                Our practical experience programmes are designed
+                around projects, guided application and feedback.
+                Participants can work with real or carefully prepared
+                datasets, develop outputs and present what they have learned.
             </p>
 
+
             <ul class="check-list">
+
                 <li>Project-based practical assignments</li>
                 <li>Guidance and feedback from facilitators</li>
                 <li>Research and data analysis exercises</li>
                 <li>Presentation and portfolio development</li>
+
             </ul>
 
-            <a href="#contact" class="button button-navy">
+
+            <a href="#contact" class="button button-primary">
                 Explore experience programmes →
             </a>
 
@@ -508,45 +709,57 @@
 </section>
 
 
-<!-- INSIGHTS -->
+<!-- INSIGHTS SECTION -->
+
 <section class="insights section-pad" id="insights">
 
-    <div class="container insights-grid">
+    <div class="container">
 
-        <div>
+        <div class="section-heading">
 
-            <p class="eyebrow">IDEAS INTO INSIGHT</p>
+            <div>
 
-            <h2>
-                Curiosity drives<br>
-                <em>understanding.</em>
-            </h2>
+                <p class="eyebrow">NIEA KNOWLEDGE HUB</p>
+
+                <h2>
+                    Ideas, research<br>
+                    and <span>new perspectives.</span>
+                </h2>
+
+            </div>
+
+            <p class="insights-description">
+                A space for exploring economic developments,
+                research findings, data stories and perspectives
+                on the issues shaping our world.
+            </p>
 
         </div>
 
-        <div class="insights-content">
 
-            <p>
-                Our research and insights space will feature accessible
-                articles, data stories and perspectives on economics,
-                finance, research and the digital economy.
-            </p>
+        <div class="insights-card">
 
-            <div class="insight-placeholder">
+            <div class="insights-symbol">
+                N.
+            </div>
 
-                <span class="insight-mark">N.</span>
+            <div class="insights-card-content">
 
-                <div>
-                    <b>Research and insights coming soon</b>
-                    <small>
-                        Explore practical perspectives on the issues
-                        shaping our world.
-                    </small>
-                </div>
+                <span>COMING SOON</span>
 
-                <span class="placeholder-arrow">↗</span>
+                <h3>Research and insights are on the way.</h3>
+
+                <p>
+                    Stay connected as we prepare articles,
+                    economic perspectives and accessible
+                    research publications.
+                </p>
 
             </div>
+
+            <a href="#contact" class="insights-link">
+                Stay connected ↗
+            </a>
 
         </div>
 
@@ -556,20 +769,23 @@
 
 
 <!-- CALL TO ACTION -->
+
 <section class="cta-band">
 
     <div class="container cta-content">
 
         <div>
-            <p class="eyebrow light">START A CONVERSATION</p>
+
+            <p class="eyebrow light">YOUR NEXT STEP STARTS HERE</p>
 
             <h2>
-                Let's turn your next idea<br>
-                into <em>something practical.</em>
+                Ready to learn,<br>
+                grow and <span>make an impact?</span>
             </h2>
+
         </div>
 
-        <a href="#contact" class="button button-gold">
+        <a href="#contact" class="button button-light">
             Talk to NIEA →
         </a>
 
@@ -578,34 +794,42 @@
 </section>
 
 
-<!-- CONTACT -->
+<!-- CONTACT SECTION -->
+
 <section class="contact section-pad" id="contact">
 
     <div class="container contact-grid">
 
-        <div>
+
+        <div class="contact-information">
 
             <p class="eyebrow">GET IN TOUCH</p>
 
             <h2>
-                Have a question<br>
-                or a project in <em>mind?</em>
+                Let's start<br>
+                a <span>conversation.</span>
             </h2>
 
             <p class="contact-lead">
-                Contact us about training, professional services,
-                partnerships or a tailored programme for your organisation.
+                Have a question about our programmes, professional
+                services, partnerships or tailored training?
+                We would be glad to hear from you.
             </p>
 
+
             <div class="contact-detail">
-                <span>EMAIL</span>
+
+                <span>EMAIL ADDRESS</span>
+
                 <a href="mailto:info@niea.com.na">
                     info@niea.com.na
                 </a>
+
             </div>
 
+
             <p class="contact-note">
-                Replace this placeholder email with NIEA's confirmed
+                Replace the placeholder email with NIEA's confirmed
                 business email before publishing.
             </p>
 
@@ -614,18 +838,41 @@
 
         <form class="contact-form" id="contact-form">
 
+            <div class="form-heading">
+
+                <h3>Send us an enquiry</h3>
+
+                <p>Complete the form below to get started.</p>
+
+            </div>
+
+
             <label for="name">Your name</label>
-            <input type="text" id="name" name="name"
-                   placeholder="Full name" required>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your full name"
+                   required>
+
 
             <label for="email">Email address</label>
-            <input type="email" id="email" name="email"
-                   placeholder="you@example.com" required>
 
-            <label for="interest">I'm interested in</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="you@example.com"
+                   required>
+
+
+            <label for="interest">Area of interest</label>
 
             <select id="interest" name="interest" required>
-                <option value="" selected disabled>Select an area</option>
+
+                <option value="" selected disabled>
+                    Select an area
+                </option>
+
                 <option>Training and courses</option>
                 <option>Professional experience programmes</option>
                 <option>Research and consultancy</option>
@@ -633,21 +880,27 @@
                 <option>Corporate training</option>
                 <option>Partnerships</option>
                 <option>Other</option>
+
             </select>
 
-            <label for="message">How can we help?</label>
 
-            <textarea id="message" name="message"
-                      rows="4" placeholder="Tell us about your enquiry..."
+            <label for="message">Your message</label>
+
+            <textarea id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell us how we can help..."
                       required></textarea>
 
-            <button type="submit" class="button button-navy">
+
+            <button type="submit" class="button button-primary">
                 Prepare enquiry →
             </button>
 
+
             <p class="form-hint">
-                This demonstration form prepares an email.
-                Connect a form service before launching the live website.
+                This form prepares an email using your email application.
+                It does not store submissions.
             </p>
 
             <p id="form-status" class="form-status"></p>
@@ -662,22 +915,41 @@
 
 
 <!-- FOOTER -->
+
 <footer class="site-footer">
 
     <div class="container footer-main">
 
-        <a class="brand footer-brand" href="#home">
-            <span class="brand-mark">N</span>
+
+        <a href="#home" class="brand footer-brand">
+
+            <div class="logo-frame footer-logo">
+
+                <img src="niea-logo.png" alt="NIEA Logo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+                <span class="logo-fallback">N</span>
+
+            </div>
 
             <span class="brand-copy">
+
                 <strong>NIEA</strong>
-                <small>Namibia Institute of<br>Economics & Analytics</small>
+
+                <small>
+                    Namibia Institute of<br>
+                    Economics & Analytics
+                </small>
+
             </span>
+
         </a>
 
-        <p>
+
+        <div class="footer-description">
             Turning knowledge into practical skills.
-        </p>
+        </div>
+
 
         <a href="#home" class="back-top">
             Back to top ↑
