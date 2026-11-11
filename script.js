@@ -3,41 +3,35 @@
 ========================================= */
 
 
-/* MOBILE NAVIGATION */
+// MOBILE NAVIGATION
 
-const menuButton = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle");
+const primaryNav = document.querySelector(".primary-nav");
 
-const navigation = document.querySelector(".primary-nav");
+if (menuToggle && primaryNav) {
 
+    menuToggle.addEventListener("click", function () {
 
-if (menuButton && navigation) {
+        const isOpen = primaryNav.classList.toggle("open");
 
-    menuButton.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", isOpen);
 
-        const isOpen =
-            menuButton.getAttribute("aria-expanded") === "true";
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            String(!isOpen)
-        );
-
-        navigation.classList.toggle("open", !isOpen);
-
-        menuButton.textContent = isOpen ? "☰" : "✕";
+        menuToggle.textContent = isOpen ? "✕" : "☰";
 
     });
 
 
-    navigation.querySelectorAll("a").forEach(link => {
+    // Close navigation after clicking a link
 
-        link.addEventListener("click", () => {
+    primaryNav.querySelectorAll("a").forEach(link => {
 
-            navigation.classList.remove("open");
+        link.addEventListener("click", function () {
 
-            menuButton.setAttribute("aria-expanded", "false");
+            primaryNav.classList.remove("open");
 
-            menuButton.textContent = "☰";
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.textContent = "☰";
 
         });
 
@@ -46,7 +40,8 @@ if (menuButton && navigation) {
 }
 
 
-/* AUTOMATIC COPYRIGHT YEAR */
+
+// DYNAMIC COPYRIGHT YEAR
 
 const yearElement = document.getElementById("year");
 
@@ -57,30 +52,34 @@ if (yearElement) {
 }
 
 
-/* COURSE ENQUIRY */
 
-document.querySelectorAll("[data-course]").forEach(link => {
+// COURSE ENQUIRY BUTTONS
 
-    link.addEventListener("click", () => {
+const courseLinks = document.querySelectorAll("[data-course]");
 
-        const interest = document.getElementById("interest");
+const interestField = document.getElementById("interest");
 
-        const message = document.getElementById("message");
+const messageField = document.getElementById("message");
 
 
-        if (interest) {
+courseLinks.forEach(link => {
 
-            interest.value = "Training and courses";
+    link.addEventListener("click", function () {
+
+        const courseName = this.getAttribute("data-course");
+
+        if (interestField) {
+
+            interestField.value = "Training and courses";
 
         }
 
+        if (messageField) {
 
-        if (message) {
-
-            message.value =
-                "I would like to enquire about: " +
-                link.dataset.course +
-                ". Please share further information.";
+            messageField.value =
+                "Hello NIEA,\n\nI would like to enquire about your " +
+                courseName +
+                " programme. Please provide me with further information about the programme, availability and fees.\n\nThank you.";
 
         }
 
@@ -89,72 +88,80 @@ document.querySelectorAll("[data-course]").forEach(link => {
 });
 
 
-/* CONTACT FORM */
+
+// CONTACT FORM
 
 const contactForm = document.getElementById("contact-form");
+
+const formStatus = document.getElementById("form-status");
+
+
+// Replace this with NIEA's confirmed business email.
+
+const NIEA_EMAIL = "info@niea.com.na";
 
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", function (event) {
 
         event.preventDefault();
 
 
-        if (!contactForm.reportValidity()) {
+        const name = document.getElementById("name").value.trim();
+
+        const email = document.getElementById("email").value.trim();
+
+        const interest = document.getElementById("interest").value;
+
+        const message = document.getElementById("message").value.trim();
+
+
+        if (!name || !email || !interest || !message) {
+
+            formStatus.textContent =
+                "Please complete all fields before submitting.";
 
             return;
 
         }
 
 
-        const formData = new FormData(contactForm);
-
-
-        const name = formData.get("name");
-
-        const email = formData.get("email");
-
-        const interest = formData.get("interest");
-
-        const message = formData.get("message");
-
-
         const subject = encodeURIComponent(
-            "NIEA Website Enquiry: " + interest
+            "NIEA Website Enquiry - " + interest
         );
 
 
         const body = encodeURIComponent(
 
-            "Name: " + name +
-            "\nEmail: " + email +
-            "\nArea of interest: " + interest +
-            "\n\nMessage:\n" + message
+            "Dear NIEA Team,\n\n" +
+
+            "I am contacting you through the NIEA website.\n\n" +
+
+            "Name: " + name + "\n" +
+
+            "Email: " + email + "\n" +
+
+            "Area of Interest: " + interest + "\n\n" +
+
+            "Message:\n" + message + "\n\n" +
+
+            "Kind regards,\n" + name
 
         );
 
 
-        // Replace this with NIEA's confirmed business email.
-
-        const recipient = "info@niea.com.na";
-
-
-        const status = document.getElementById("form-status");
-
-
-        if (status) {
-
-            status.textContent =
-                "Your email application should open with your enquiry prepared. Please review and send it.";
-
-        }
-
-
-        window.location.href =
-            "mailto:" + recipient +
+        const mailtoLink =
+            "mailto:" + NIEA_EMAIL +
             "?subject=" + subject +
             "&body=" + body;
+
+
+        formStatus.textContent =
+            "Your email application will open shortly.";
+
+
+        window.location.href = mailtoLink;
 
     });
 
