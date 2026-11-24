@@ -98,7 +98,7 @@ const formStatus = document.getElementById("form-status");
 
 // Replace this with NIEA's confirmed business email.
 
-const NIEA_EMAIL = "info@niea.com.na";
+const NIEA_EMAIL = "infoniea531@gmail.com";
 
 
 if (contactForm) {
